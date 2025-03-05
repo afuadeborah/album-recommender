@@ -8,7 +8,7 @@ const router = express.Router();
 
 // register (create) the user (POST)
 router.post('/register', async(req, res) => {
-    const {username, password} = req.body;
+    const { username, password } = req.body;
 
     // bcrypt hashes passwords entered during login so we handle that asynchronously
     // the number 10 is the salt round that tells us the cost of hashing; the higher the cost the more secure
